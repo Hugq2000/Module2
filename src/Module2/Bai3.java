@@ -18,20 +18,20 @@ public class Bai3 implements Bai3_Interface {
 
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Nhập bán kính: ");
+        System.out.println("Nhap ban kinh = ");
         double r = Double.parseDouble(input.readLine());
         Bai3_Interface circle = (Double x1, Double x2) -> x1 * Math.pow(x2, 2);
         System.out.println("S = PI * (r*r) = " + circle.calArea(Math.PI, r));
-        System.out.println("Nhập chiều dài: ");
+        System.out.print("Nhap chieu dai = ");
         double H = Double.parseDouble(input.readLine());
-        System.out.println("Nhập chiều rộng: ");
+        System.out.println("Nhap chieu rong = ");
         double W = Double.parseDouble(input.readLine());
         Bai3_Interface rectangle = (Double x1, Double x2) -> x1 * x2;
-        System.out.println("S = W x H = " + rectangle.calArea(W, H));
+        System.out.println("S = H * W " + rectangle.calArea(W, H));
     }
 
     @Override
     public double calArea(Double x1, Double x2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
