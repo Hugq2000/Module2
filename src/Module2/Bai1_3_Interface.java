@@ -9,6 +9,6 @@ package Module2;
  *
  * @author Admin
  */
-public interface Bai3_Interface {
+public interface Bai1_3_Interface {
     public double calArea(Double x1, Double x2);
 }

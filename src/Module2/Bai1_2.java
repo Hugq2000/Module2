@@ -15,7 +15,7 @@ import java.util.List;
 asdasff
  * @author Hung 
  */
-public class Bai2 {
+public class Bai1_2 {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(new Integer[]{2, 3, 4, 5, 6, 7});
         int donGia = 2000;

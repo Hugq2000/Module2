@@ -9,6 +9,6 @@ package Module2;
  *
  * @author Admin
  */
-public interface Bai4_Interface {
+public interface Bai1_4_Interface {
     public Integer operator(Integer o1, Integer o2);
 }

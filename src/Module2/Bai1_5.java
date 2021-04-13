@@ -15,12 +15,15 @@ import java.util.List;
 asdasff
  * @author Hung 
  */
-public class Bai1 {
+@FunctionalInterface
+interface sortArray{
+    void sortArrayy();
+}
+
+public class Bai1_5 {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-//        for(Integer n : list){
-//            System.out.println(n);
-//        }
-        list.forEach(n -> System.out.println(n));
+        List<String> list = Arrays.asList(new String[]{"aa", "cc", "bb", "ee", "qq", "yy", "ii"});
+        list.sort((p1, p2) -> p1.compareTo(p2));
+        list.forEach(System.out::println);
     }
 }

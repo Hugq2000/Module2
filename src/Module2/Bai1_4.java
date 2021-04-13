@@ -9,12 +9,12 @@ package Module2;
  *
  * @author Admin
  */
-public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
+public class Bai1_4 extends javax.swing.JFrame implements Bai1_4_Interface{
     
     /**
      * Creates new form Bai4
      */
-    public Bai4() {
+    public Bai1_4() {
         initComponents();
     }
     
@@ -140,7 +140,7 @@ public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
         // TODO add your handling code here:
         int soThuNhat = Integer.parseInt(txtSoThuNhat.getText());
         int soThuHai = Integer.parseInt(txtSoThuHai.getText());
-        Bai4_Interface op = (Integer o1, Integer o2) -> o1 + o2;
+        Bai1_4_Interface op = (Integer o1, Integer o2) -> o1 + o2;
         int tong = op.operator(soThuNhat, soThuHai);
         txtTong.setText(String.valueOf(tong));
         jLabel3.setText("Tổng");
@@ -150,7 +150,7 @@ public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
         // TODO add your handling code here:
         int soThuNhat = Integer.parseInt(txtSoThuNhat.getText());
         int soThuHai = Integer.parseInt(txtSoThuHai.getText());
-        Bai4_Interface op = (Integer o1, Integer o2) -> o1 - o2;
+        Bai1_4_Interface op = (Integer o1, Integer o2) -> o1 - o2;
         int tru = op.operator(soThuNhat, soThuHai);
         txtTong.setText(String.valueOf(tru));
         jLabel3.setText("Trừ");
@@ -160,7 +160,7 @@ public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
         // TODO add your handling code here:
         int soThuNhat = Integer.parseInt(txtSoThuNhat.getText());
         int soThuHai = Integer.parseInt(txtSoThuHai.getText());
-        Bai4_Interface op = (Integer o1, Integer o2) -> o1 / o2;
+        Bai1_4_Interface op = (Integer o1, Integer o2) -> o1 / o2;
         int chia = op.operator(soThuNhat, soThuHai);
         txtTong.setText(String.valueOf(chia));
         jLabel3.setText("Chia");
@@ -170,7 +170,7 @@ public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
         // TODO add your handling code here:
         int soThuNhat = Integer.parseInt(txtSoThuNhat.getText());
         int soThuHai = Integer.parseInt(txtSoThuHai.getText());
-        Bai4_Interface op = (Integer o1, Integer o2) -> o1 * o2;
+        Bai1_4_Interface op = (Integer o1, Integer o2) -> o1 * o2;
         int nhan = op.operator(soThuNhat, soThuHai);
         txtTong.setText(String.valueOf(nhan));
         jLabel3.setText("Nhân");
@@ -193,20 +193,21 @@ public class Bai4 extends javax.swing.JFrame implements Bai4_Interface{
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Bai4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai1_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Bai4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai1_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Bai4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai1_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Bai4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Bai1_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Bai4().setVisible(true);
+                new Bai1_4().setVisible(true);
             }
         });
     }
