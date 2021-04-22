@@ -1,0 +1,18 @@
+{
+    "CONG_TY": {
+        "Dia_chi": "11223 Tran Hung Dao Q.1 TP HCM",
+        "Dien_thoai": "0976136167",
+        "ID": 1,
+        "Mail": "Tongducquanghung1711@gmail.com"
+    },
+    "Don_Vi": [{
+            "Id_chi_nhanh": 1,
+            "So_nhan_vien": "14",
+            "Ten": "Don vi A1"
+        },
+        {
+            "Id_chi_nhanh": 2,
+            "So_nhan_vien": "20",
+            "Ten": "Don vi A2"
+        }]
+}
